@@ -7,3 +7,4 @@ vim.diagnostic.config({
   underline = false,
 })
 
+vim.opt.clipboard = "unnamedplus"
