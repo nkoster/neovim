@@ -1,6 +1,6 @@
 # Neovim Cheatsheet
 
-Normal mode is de startmodus. `<C-x>` = Ctrl+x, `<Esc>` = Escape.
+Normal mode is de startmodus. `<C-x>` = Ctrl+x, `<Esc>` = Escape. De leader-toets is `<Space>`.
 
 ## Modes & selectie
 
@@ -35,6 +35,7 @@ Normal mode is de startmodus. `<C-x>` = Ctrl+x, `<Esc>` = Escape.
 | `dd` | Regel verwijderen |
 | `D` | Tot einde regel verwijderen |
 | `yy` | Regel kopiëren |
+| `"+y` | Geselecteerde tekst naar host clipboard kopiëren |
 | `p` / `P` | Plakken na / voor cursor |
 | `ciw` | Woord vervangen |
 | `diw` | Woord verwijderen |
@@ -51,8 +52,18 @@ Normal mode is de startmodus. `<C-x>` = Ctrl+x, `<Esc>` = Escape.
 | `?tekst` | Achteruit zoeken |
 | `n` / `N` | Volgende / vorige match |
 | `*` / `#` | Woord onder cursor vooruit / achteruit |
+| `<Space>ff` | Fuzzy zoeken naar bestanden |
 | `:%s/foo/bar/g` | Vervang `foo` door `bar` in het hele bestand |
 | `:%s/foo/bar/gc` | Hetzelfde, maar bevestig per match |
+
+## Diagnostiek & meldingen
+
+| Toets | Actie |
+| --- | --- |
+| `:verbose set spell?` | Toon of spellcheck aanstaat en waar de instelling is gezet |
+| `<Space>nd` | Snack-notificatiepopups verbergen |
+| `<Space>nh` | Notification history openen |
+| `:q` | De notification history-dialoog sluiten |
 
 ## Buffers
 
